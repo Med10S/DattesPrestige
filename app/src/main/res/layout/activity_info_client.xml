@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoClientActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+
+                android:src="@drawable/ic_back_black_24" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="details"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_edit_24" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardElevation="3dp"
+            app:contentPadding="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nom_du_client"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Iname_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Mohammed Sbihi"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Iaddress_tv"
+                        android:layout_width="match_parent"
+                        android:maxWidth="200dp"
+
+                        android:layout_gravity="center"
+                        android:autoLink="web|map"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:inputType="textMultiLine"
+
+                        android:text="www.facebook.com"
+                        android:textColor="@color/black"
+                        android:textColorLink="#0022F8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prix"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/IPrice_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="270 DH"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Portable"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/IPhone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autoLink="phone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:inputType="phone"
+                        android:text="0708032913"
+                        android:textColor="@color/teal_700"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/filterCommandeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@id/filterOrderBtn"
+                android:background="@drawable/chape_rect2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="En cours" />
+
+
+            <ImageButton
+                android:id="@+id/filterOrderBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_filter_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv1"
+                app:stackFromEnd="true"
+                app:reverseLayout="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rvv"
+                android:layout_below="@+id/filterCommandeTV"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/rvv"
+                android:layout_alignParentBottom="true">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_btn_command"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/principale"
+                    android:backgroundTint="@color/principale"
+                    android:clickable="true"
+                    android:contentDescription="TODO"
+                    android:focusable="true"
+                    android:src="@drawable/ic_balck_add"
+                    app:backgroundTint="#A7906F" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/print_btn"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/principale"
+                    android:backgroundTint="@color/principale"
+                    android:clickable="true"
+                    android:contentDescription="TODO"
+                    android:focusable="true"
+                    android:src="@drawable/ic_print_24"
+                    app:backgroundTint="#A7906F" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

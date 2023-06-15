@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> <!-- nombre de colonnes -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCol1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:padding="4dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewCol2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol13"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+
+            <TextView
+                android:id="@+id/textViewCol19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#919191" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/list_des_commande" />
+        <item
+            android:id="@+id/nav_new_commande"
+            android:icon="@drawable/ic_balck_add"
+            android:title="@string/nouvelle_commande" />
+        <item
+            android:id="@+id/nav_commancer"
+            android:icon="@drawable/ic_start_24"
+            android:title="A preparer des dattes"/>
+        <item
+            android:id="@+id/nav_commancer_boulle"
+            android:icon="@drawable/ic_start_24"
+            android:title="A preparer des boulles"/>
+        <item
+            android:id="@+id/nav_Historique"
+            android:icon="@drawable/ic_history_24"
+            android:title="Historique" />
+        <item
+            android:id="@+id/nav_Stat"
+            android:icon="@drawable/ic_stats_24"
+            android:title="Statistique" />
+        <item
+            android:id="@+id/nav_Guide"
+            android:icon="@drawable/ic_help_24"
+            android:title="Guide" />
+    </group>
+
+
+    <item android:title="Inventaire">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_M_Premier"
+                    android:icon="@drawable/ic_baseline_shopping_cart_24"
+
+                    android:title="Matiere Premier" />
+
+            </group>
+
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

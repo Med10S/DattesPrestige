@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="12 piéce"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="270 dh"
+                android:textColor="@color/principale2"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/next"
+                android:gravity="center"
+                android:text="19-02-3 15:30"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/time_tv"
+                android:layout_alignStart="@+id/time_tv"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/next"
+                android:gravity="center"
+                android:text="en cours" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+
+            android:gravity="center">
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

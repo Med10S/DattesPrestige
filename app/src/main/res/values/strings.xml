@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">DattesPrestige</string>
+    <string name="nouvelle_commande">Nouvelle Commande</string>
+    <string name="name">Name</string>
+    <string name="address">address</string>
+    <string name="phone">phone</string>
+    <string name="produit">Product : </string>
+    <string name="deadline">deadline</string>
+    <string name="more_details">more details…</string>
+    <string name="submit">Terminer</string>
+    <string name="caramel">Caramel beurre salé</string>
+    <string name="list_des_commande">List des Commande</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nom_du_client">Nom du client</string>
+    <string name="total">Total</string>
+    <string name="price">price</string>
+    <string name="flavors_beldi">flavors Beldi</string>
+    <string name="pistache_beldi">Pistache_beldi</string>
+    <string name="amande_kaab_ghzal">Amande_kaab_ghzal</string>
+    <string name="amande_gingembre">Amande_gingembre</string>
+    <string name="amande_orange">Amande_Orange</string>
+    <string name="amande_rose">amande_Rose</string>
+    <string name="caramel_beurre_sal">Caramel_beurre_salé</string>
+    <string name="framboise">framboise</string>
+    <string name="gingember_citron_vert">Gingember_citron_Vert</string>
+    <string name="citron">Citron</string>
+    <string name="amande_gout_orange">Amande_gout_orange</string>
+    <string name="amande_gout_rose">Amande_gout_rose</string>
+    <string name="pralin">praliné</string>
+    <string name="caramel_chocolate">caramel_chocolate</string>
+    <string name="speculos">Speculos</string>
+    <string name="noix_de_coco">Noix_de_coco</string>
+    <string name="pistache">Pistache</string>
+    <string name="truffe">Truffe</string>
+    <string name="caf">café</string>
+    <string-array name="array_Product">
+        <item>Select the product</item>
+        <item>Boite de 20 piéce</item>
+        <item>Boite de 18 piéce</item>
+        <item>Boite de 16 piéce</item>
+        <item>Boite de 12 piéce</item>
+        <item>Boite de 9 piéce</item>
+        <item>Boite de 5 piéce</item>
+        <item>1kg</item>
+        <item>2kg</item>
+        <item>3kg</item>
+        <item>customise</item>
+    </string-array>
+
+    <string-array name="status_commande">
+        <item>en cours</item>
+        <item>terminer</item>
+        <item>annule</item>
+        <item>attente</item>
+    </string-array>
+    <string-array name="type_commande">
+        <item>dattes</item>
+        <item>boulles</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE 1</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+
+</resources>

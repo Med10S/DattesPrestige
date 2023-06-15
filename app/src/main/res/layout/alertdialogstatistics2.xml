@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Choisi(e) l'année"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:hint="Annés "
+        android:maxEms="4"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/annes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/terminer_anne"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:text="Terminer"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/chape_rect1"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>

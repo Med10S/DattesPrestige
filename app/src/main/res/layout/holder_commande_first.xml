@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chape_rect2"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chape_rect1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="Mohammed sbihi"
+
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/price_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="270 dh"
+                android:textColor="@color/principale1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/status_terminer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/next1"
+                android:gravity="center"
+                android:text="terminer"
+                android:textColor="@color/principale3" />
+
+            <TextView
+                android:id="@+id/status_anuller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/next1"
+                android:gravity="center"
+                android:text="anuller"
+                android:textColor="@color/read" />
+
+            <TextView
+                android:id="@+id/status_attente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/status_anuller"
+                android:gravity="center"
+                android:text="en attente"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/status_cours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/status_terminer"
+                android:gravity="center"
+                android:text="en cours"
+                android:textColor="@color/teal_200" />
+
+            <ImageButton
+                android:id="@+id/next1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+
+            android:gravity="center">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

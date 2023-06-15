@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".statistique">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="30dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+
+            android:src="@drawable/ic_back_black_24" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/back_btn"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Statistics"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/setyear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/text"
+            android:layout_alignBottom="@+id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            android:src="@drawable/ic_search_24" />
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/relative"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mois_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/chape_rect1"
+        android:text="Mois" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/anne_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/chape_rect1"
+        android:text="Année" />
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_mois"
+        android:layout_width="match_parent"
+        android:layout_below="@id/relativelayout"
+        android:layout_height="match_parent">
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_Mois"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_annee"
+        android:layout_width="match_parent"
+        android:layout_below="@id/relativelayout"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_year"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>

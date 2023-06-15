@@ -1,0 +1,38 @@
+je vais faire une activiter qui afficher la quantiter des goûts de chaque commande en cours
+deja je peux filter les commande par la fonction suivante :
+ne pas oublier les declaration suffisante comme la page historique
+
+     private void loadFilterCommande(String selected) {
+            commandeList = new ArrayList<>();
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference(commande.class.getSimpleName());
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        commandeList.clear();
+
+                    for (DataSnapshot ds:snapshot.getChildren()){
+                        String commandestatus = ""+ds.child("status").getValue();
+                        if (selected.equals(commandestatus)){
+                            commande com =ds.getValue(commande.class);
+                            commandeList.add(com);
+                        }
+
+                    }
+                    //setup the adapter
+                    adapter = new RVadapter(MainActivity.this,commandeList);
+                    //set adapter
+                    recyclerView.setAdapter(adapter);
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+        }
+maintenent j'ai une liste des commande "en cours" (commandeList)
+je doit extraire les information que je veux (le nom + 18 gouts)
+
+
+wache bgha le tri diale les commande li houma en cours

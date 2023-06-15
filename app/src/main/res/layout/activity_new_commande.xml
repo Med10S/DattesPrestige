@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_command">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/nouvelle_commande"
+            android:textColor="@color/principale"
+            android:textSize="30sp" />
+
+        <!--name-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="22dp"
+                    android:hint="@string/name"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_person">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--address-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="22dp"
+                    android:hint="@string/address"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_baseline_location_on_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--phone-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="22dp"
+                    android:hint="@string/phone"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_phone_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--deadline-->
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="save" />
+
+                <LinearLayout
+                    android:id="@+id/relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout4"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="22dp"
+                        android:hint="@string/deadline"
+                        app:endIconMode="clear_text"
+                        app:startIconDrawable="@drawable/ic_time">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="datetime" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="139dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/produit"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerProduct"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginEnd="22dp"
+                            android:background="@drawable/chape_rect2"
+                            android:gravity="center"
+                            android:scrollbarSize="20dp"
+                            android:spinnerMode="dialog"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="139dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="type du produit"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnertype"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginEnd="22dp"
+                            android:background="@drawable/chape_rect2"
+                            android:gravity="center"
+                            android:scrollbarSize="20dp"
+                            android:spinnerMode="dialog"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:text=" flavors"
+                        android:textColor="@color/principale1"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="1dp"
+                        android:background="?android:attr/listDivider" />
+                    <!--POUR LES SAVEURS-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Praliné"
+
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Praliné_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Cafe"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Cafe_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="@string/caramel"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Caramel_beurre_salé_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Truffe"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Truffe_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Pistache"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Pistache_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Noix de coco"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Noix_de_coco_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Speculos"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Speculos_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Amande gout rose"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Amande_gout_rose_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Amande gout orange"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Amande_gout_orange_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearcit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Citron"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Citron_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lineargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="Gingember citron Vert"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/Gingember_citron_Vert_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="framboise"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/framboise_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="@string/caramel_chocolate"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/caramel_chocolate_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="0"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/beldi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:gravity="center"
+                            android:text="@string/flavors_beldi"
+                            android:textColor="@color/principale1"
+                            android:textSize="20sp" />
+                        <!--POUR LES SAVEURS BELDI-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:text="Amande Rose"
+                                android:textColor="@color/principale1"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/amande_Rose_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:text="Amande Orange"
+                                android:textColor="@color/principale1"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/Amande_Orange_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:text="Amande gingembre"
+                                android:textColor="@color/principale1"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/Amande_gingembre_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:text="Amande kaab ghzal"
+                                android:textColor="@color/principale1"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/Amande_kaab_ghzal_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:text="Pistache beldi"
+                                android:textColor="@color/principale1"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/Pistache_beldi_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="@string/total"
+                            android:textColor="@color/principale"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="number"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="@string/price"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/price_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewl"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="quantité"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/quantite_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:hint="@string/more_details"
+                        android:inputType="textMultiLine" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/chape_rect1"
+                            android:shadowRadius="5"
+                            android:text="@string/submit" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shape_rect_green"
+                            android:shadowRadius="5"
+                            android:text="ajouter un autre produit " />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

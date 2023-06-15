@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300484254816",
+    "project_id": "projectdattesprestige",
+    "storage_bucket": "projectdattesprestige.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300484254816:android:96ddc7858559ed17d83705",
+        "android_client_info": {
+          "package_name": "com.example.dattespretige"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300484254816-d0roqsntlu6og5fa3h0p76i0rhnog00r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5rtLdj_1jpO7-AEBZKU1HuFAuHVjNjaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300484254816-d0roqsntlu6og5fa3h0p76i0rhnog00r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

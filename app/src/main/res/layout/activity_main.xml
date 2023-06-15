@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:layout_marginBottom="15dp"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navigationIcon="@drawable/ic_menu_black_24" />
+                <ImageButton
+                    android:id="@+id/warning"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/ic_warning_24"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="@string/list_des_commande"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/toolbar"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/commencer"
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/chape_rect1"
+                    android:text="commencer"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/textView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/filterCommandeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterOrderBtn"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="En cours" />
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="106dp"
+                android:layout_height="34dp"
+                android:layout_above="@+id/filterCommandeTV"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@+id/filterOrderBtn"
+                android:background="@drawable/chape_rect2"
+                android:drawableStart="@drawable/ic_search_24"
+                android:gravity="center"
+                android:hint="Search"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/filterOrderBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_filter_24" />
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_below="@id/filterCommandeTV"
+                    app:stackFromEnd="true"
+                    app:reverseLayout="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_btn_command"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/principale"
+                android:backgroundTint="@color/principale"
+                android:clickable="true"
+                android:contentDescription="TODO"
+                android:focusable="true"
+                android:src="@drawable/ic_balck_add"
+                app:backgroundTint="#A7906F" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
